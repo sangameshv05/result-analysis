@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+
+a:link, a:visited {
+  position: absolute;
+  top:25%;
+  left: 46%;
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+} 	
+.button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button4 {
+padding: 10px 12px;
+  background-color: white; 
+  color: blue; 
+  border: 2px solid ;
+  margin: 4px 2px;
+  top:2%;
+  right: 5%;
+  position: absolute;
+}
+
+.button4:hover {
+  background-color: lightblue;
+  color: white;
+}
+h1{
+
+position: absolute;
+top: 10%;
+left: 40%;
+font-size: 40px;
+}
+p{
+color: blue;
+margin-top: 18%;
+position: absolute;
+left: 46%;
+font-size: 25px;
+
+}
+</style>
+</head>
+<body>
+<button class="button button4" onclick="window.location.href = 'welcome.html';" style="margin: auto;color: blue; align:left;" >LOG OUT</button>
+
+<h1 align="center" style="color:blue;">WELCOME ADMIN</h1>
+<a href="newresult" onclick="fun()" style="align-self: center;" name="result">ADD NEW RESULT</a>
+
+<p id="fun"></p>
+<script type="text/javascript">
+function fun(){
+	document.getElementById("fun").innerHTML="calculating result.....";
+}
+
+</script>
+</body>
+</html>
