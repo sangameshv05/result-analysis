@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+background-image: url("marks1.png");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+.p1{
+	font-size:50px;
+	margin: 1em;
+}
+.p2{
+	
+	font-size: 25px;
+	margin-left: -5em;
+	}
+input{
+height: 30px;
+text-align: center;}
+.p3{
+position:relative;
+left:56em;
+background-color: white;
+width: 80px;
+}
+.p3:hover{
+background-image:url("marks1.png");
+color: white;
+}
+.p4,.p5,.a1 {
+margin:.5em;
+position: relative;
+top: 5%;
+padding: 5px 10px;
+background-color: white;
+top:5%;
+
+}
+
+.p4:hover ,.p5:hover,.a1:hover{
+background-image: url("marks1.png");
+color: black;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+<nav>
+
+<a class="a1" href="welcome.html">HOME</a>
+<a class="p4" align="center" href="http://localhost:8080/Result/register.html">REGISTER</a>
+<a class="p5" href="http://localhost:8080/Result/update.html">UPDATE DETAILS</a>
+
+</nav>
+<p class="p1"	align="center">SUBJECT WISE RESULTS</p>
+<form action="analysis" name="sc" >
+
+<p class="p2" align="center">SUBJECT CODE:<input type="text" name="code" placeholder="17cs31" required="required"  ></p>
+<p id="alert"></p>
+
+<input class="p3" type="submit" onclick="check()" >
+
+
+
+
+</form>
+<script type="text/javascript">
+
+function check(){
+	
+	var code=document.forms["sc"]["code"].value;
+	if(code.length==6 || code.length==7){
+	}
+	else{
+		alert('invalid subject code');
+
+	}
+	
+		
+	
+}
+
+</script>
+</body>
+</html>

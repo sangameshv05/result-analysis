@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background: url(sresutl.jpg) no-repeat center fixed; 
+  background-size: contain;
+text-align:"center";
+}
+
+p{
+
+font-size: 20px;	
+}
+p.p1{
+position:relative;
+top:.5em;
+font-size: 60px;
+color: lightblue;
+}
+p.p2{
+align:"center";
+margin-left: 5%;
+color: red;
+
+}
+input{
+text-align: center;
+margin-left: 45%;
+height: 25px;
+width:15em;}
+input:hover{
+background-color: lightblue;
+color:red;}
+
+.button {
+  
+  border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  			
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+	  padding: 16px 32px;
+	  
+	  top: 3%;
+  	  left:15%;
+      position: absolute;
+}	
+.button2 {
+	  padding: 16px 32px;
+	  
+	  top: 3%;
+  	  left: 40%;
+      position: absolute;
+}	
+
+.button3 {
+	  padding: 16px 32px;
+	  
+	  top: 3%;
+  	  left:25%;
+      position: absolute;
+}	
+
+</style>
+</head>
+<body>
+<button class="button button1" onclick="window.location.href = 'welcome.html';" style="margin: auto;color: blue;">HOME</button>
+<button class="button button3" onclick="window.location.href = 'classresult.html';" style="margin: auto;color: blue;">CLASS RESULT</button>
+
+<button class="button button2" onclick="window.location.href = 'revalresult';" style="margin: auto;color: blue;">REVALUATION RESULT</button>
+
+<p class="p1" align="center">STUDENT RESULT</p>
+
+<form action="Hello" name="result">
+
+
+<p class="p2" align="center"  > ENTER USN</p>
+<input type="text" name="usn" size="10" required="required"  placeholder="enter usn" autofocus="autofocus">
+<br>
+<p align="left" class="sub"><input type="submit" onclick="check()"></p>
+<br>
+
+
+
+</form>
+<script type="text/javascript">
+function check(){
+	
+	var usn=document.forms["result"]
+	["usn"].value;
+	if(usn.length!=10){
+		alert('invalid usn');
+		document.getElementById("result").action = "index.html";
+		
+	}
+	
+	
+	
+}
+</script>
+</body>
+</html>
